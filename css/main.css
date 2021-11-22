@@ -1,0 +1,155 @@
+:root {
+  --primary-color: #e0dfe0;
+  --secondary-color:#a9aca8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.row {
+  background-color: var(--primary-color);
+  padding: 1.5em;
+}
+
+.row h2 {
+  font-weight: bold;
+}
+
+.row h6 {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.row a {
+  text-decoration: none;
+}
+
+.header {
+  color: black;
+}
+
+.photo {
+  position: relative;
+  top: 20px;
+  border-radius: 27px 27px 27px 27px;
+  -webkit-border-radius: 27px 27px 27px 27px;
+  -moz-border-radius: 27px 27px 27px 27px;
+}
+
+.main {
+  background-color: var(--secondary-color);
+  padding: 1.8em;
+}
+
+.main h3 {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.main a {
+  text-decoration: none;
+}
+
+.main .lang {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1.2px solid black;
+  border-spacing: 50px;
+  margin: 0;
+  padding: 1.5em;
+  width: 70%;
+}
+
+.main .lang th {
+  height: 50px;
+  text-align: center;
+  border: 1.2px solid var(--primary-color);
+}
+
+.main .lang th:hover {
+  color: var(--primary-color);
+}
+
+.main .lang td {
+  text-align: center;
+  border: 1.2px solid var(--primary-color);
+}
+
+.main .lang td:hover {
+  font-weight: bold;
+  background-color: var(--primary-color);
+}
+
+.contact {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.contact .box {
+  position: relative;
+  width: 200px;
+  border: 2px solid #313030;
+  height: 300px;
+  padding: 4px;
+  margin: 0px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 14px 14px 14px 14px;
+  box-shadow: 0px 3px 10px 3px rgba(117, 99, 99, 0.73);
+  -webkit-box-shadow: 0px 3px 10px 3px rgba(117, 99, 99, 0.73);
+  -moz-box-shadow: 0px 3px 10px 3px rgba(117, 99, 99, 0.73);
+}
+
+.contact a:hover {
+  font-weight: bold;
+}
+
+button {
+  background-color: black;
+  border: none;
+  border-radius: 10%;
+  color: var(--secondary-color);
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  padding: 0.5em;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .header {
+  color: var(--primary-color);
+}
+
+.dark-mode .main {
+  background-color: black;
+}
+
+.dark-mode .row {
+  background-color: black;
+}
+
+.zoom {
+  padding: 30px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  width: 100px;
+  height: 100px;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+/*# sourceMappingURL=main.css.map */
