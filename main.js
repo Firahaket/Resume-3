@@ -64,11 +64,11 @@ function slide(){
     //jQuery animation
      $(document).ready(function(){
         $("#personal").click(function(){
-            var img = $("#personal");
-            img.animate({height: '100px', left: '60px', opacity: '0.3'}, "slow");
-            img.animate({width: '100px', opacity: '0.7'}, "slow");
-            img.animate({height: '60px', opacity: '0.3'}, "slow");
-            img.animate({height: '60px', right: '60px', opacity: '0.7'}, "slow");
+            var imga = $("#personal");
+            imga.animate({height: '100px', left: '60px', opacity: '0.3'}, "slow");
+            imga.animate({width: '100px', opacity: '0.7'}, "slow");
+            imga.animate({height: '60px', opacity: '0.3'}, "slow");
+            imga.animate({height: '60px', right: '60px', opacity: '0.7'}, "slow");
         });
         $("#stop").click(function(){
             $("#personal").stop();
