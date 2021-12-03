@@ -17,25 +17,35 @@
         Student ID: 190302055
         Course: CS412 Web Application Development
         Assignement: Project III (Resume - HTML & CSS & JS)
-        Due Date: 31 Nov 2021
+        Due Date: 7 Dec 2021
     -->
 </head>
 <body>
-    <script type="text/JavaScript" src="main.js"></script>
-
     <!--Introductory part-->
     <div class="row">
     <div class="col-sm-6 col-md-7 col-lg-8">
+        <!--an event-->
         <button onclick="myFunction()">Dark mode</button>
+        <button onclick="display()">Display</button>
+        <button id="stop">Stop</button>
+        <button id="myButton">Open modal</button>
+       
+        <p id="day"></p>
         <h2>Resume</h2>
         <h6>TA</h6>
         <h6>Passionate junior student of Computer Science and Engineering who loves to read books, and learns languages in free time, sees herself as a full stack developer in future.</h6>
         
     </div>
+    <div id="modalM" class="modal">
+      <div class="modal-content">
+        <span class="c">&times;</span>
+        <p>After the updates you are able now to zoom the resume photo with just pointing over the picture, slide and animate it with a click on the picture but also stop the animation using the stop button. You are able to display alert messages and a reminder for the deadline with using the display button, but also you are given a note afterwards the current day is displayed. Most importantly dark mode is now available. We wish you a nice time while using this page.</p>
+      </div>
+    </div>
     <div class="col-sm-6 col-md-5 col-lg-4">
         <h2 class="header">
             Fikreta Turanović <br>
-            <div class="zoom"><img src="images\Fikreta Turanovic.jpg" class="photo" alt="Resume photo" title="Personal photo"></div>
+            <div onmouseover="zoom()" onclick="slide()"><img src="images\Fikreta Turanovic.jpg" class="photo" id="personal" alt="Resume photo" title="Personal photo"></div>
         </h2>
     </div>
     </div>
@@ -213,5 +223,10 @@
     </div>
     </div>
 </div>
+
+
+    <script type="text/JavaScript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </body>
 </html>

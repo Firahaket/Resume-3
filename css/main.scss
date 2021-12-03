@@ -114,7 +114,7 @@ a{
 }
 button{
 
-    background-color: black;
+    background-color: rgb(88, 85, 85);
    //border-style: ;
     border: none;
     border-radius: 10%;
@@ -143,14 +143,52 @@ button{
 }
 
 .zoom{
-    padding: 30px;
+    padding: 5px;
     transition: transform .2s;
     width: 100px;
     height: 100px;
-   
+
+    .zoom:hover{
+        transform: scale(1.5);
+    }
+
 }
 
-.zoom:hover{
-    transform: scale(1.5);
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0,0,0,0.7);
+
+    .modal-content{
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
 }
+
+.c {
+    color: #b0bba4;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+    .c:hover, .c:focus{
+        color: rgb(71, 70, 70);
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+  
+
 

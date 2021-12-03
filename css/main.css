@@ -111,7 +111,7 @@ body {
 }
 
 button {
-  background-color: black;
+  background-color: #585555;
   border: none;
   border-radius: 10%;
   color: var(--secondary-color);
@@ -139,7 +139,7 @@ button {
 }
 
 .zoom {
-  padding: 30px;
+  padding: 5px;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
@@ -148,8 +148,43 @@ button {
   height: 100px;
 }
 
-.zoom:hover {
+.zoom .zoom:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.c {
+  color: #b0bba4;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c .c:hover, .c .c:focus {
+  color: #474646;
+  text-decoration: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
